@@ -1,7 +1,7 @@
 var rides = require("../lib/rides")
 
 describe("rides", function(){
-  it("child is too short",function(){
+  it("child is tall enough",function(){
     var child1 = {
       height: 3,
       name: "Julian",
@@ -27,7 +27,7 @@ describe("rides", function(){
     expect(rides.isTallEnough(child2,ride1)).toEqual(true)
     expect(rides.isTallEnough(child2,ride2)).toEqual(true)
   })
-  it("child is tall enough",function(){
+  it("child is too short",function(){
     var child1 = {
       height: 3,
       name: "Julian",
